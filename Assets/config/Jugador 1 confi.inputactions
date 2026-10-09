@@ -1,0 +1,89 @@
+{
+    "version": 1,
+    "name": "Jugador 1 confi",
+    "maps": [
+        {
+            "name": "jugador 1",
+            "id": "69ab7481-5209-4304-846f-661c88d6d880",
+            "actions": [
+                {
+                    "name": "move",
+                    "type": "Value",
+                    "id": "df84d165-becb-460e-afdd-3216bd563452",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "jump",
+                    "type": "Button",
+                    "id": "c9c48b99-9bd5-4449-bc3f-15f84535a92b",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "2D Vector",
+                    "id": "db81e522-a762-4509-9f25-b7bc0521b19a",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "move",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "left",
+                    "id": "5f29f5f2-710e-45fa-926c-2cea19f33236",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";wasd",
+                    "action": "move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "ba47db2a-40e0-4ac3-98c7-6de5c891be2f",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "60b95bf7-8565-416f-b2e9-76b613415a7e",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";wasd",
+                    "action": "jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "wasd",
+            "bindingGroup": "wasd",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}

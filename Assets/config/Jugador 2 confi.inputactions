@@ -1,0 +1,89 @@
+{
+    "version": 1,
+    "name": "Jugador 2 confi",
+    "maps": [
+        {
+            "name": "Jugador 2",
+            "id": "586484cb-d439-484d-bac6-394ebe3df1d4",
+            "actions": [
+                {
+                    "name": "move",
+                    "type": "Value",
+                    "id": "b3581212-2113-4f70-accc-560b679aeb47",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "jump",
+                    "type": "Button",
+                    "id": "3a6cf5a0-f193-4197-a270-4a7f9a421359",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "2D Vector",
+                    "id": "d98e4278-af4f-462c-8dde-e8208c117914",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "move",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "left",
+                    "id": "82646244-663d-4d21-ba13-687dc8949220",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Flechas",
+                    "action": "move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "74dd98f2-fb1f-49bc-bc60-ce5a00e778ff",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Flechas",
+                    "action": "move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "0c5d86de-4a9d-4b3b-9fa9-a8a346da34f8",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Flechas",
+                    "action": "jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Flechas",
+            "bindingGroup": "Flechas",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}

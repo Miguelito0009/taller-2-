@@ -1,0 +1,89 @@
+{
+    "version": 1,
+    "name": "Jugador 3 confi",
+    "maps": [
+        {
+            "name": "Jugador 3",
+            "id": "25dcdd5a-3388-4f50-b438-5bc5aa2dfccd",
+            "actions": [
+                {
+                    "name": "move",
+                    "type": "Value",
+                    "id": "c762d7e1-63dc-4eca-8619-44b1464d8e8c",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "jump",
+                    "type": "Button",
+                    "id": "8a97f19e-49f2-400a-b845-77a8750e7601",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "2D Vector",
+                    "id": "790012d0-aa36-42c2-81ef-7028d7ad197d",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "move",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "left",
+                    "id": "3d101dcc-9f6b-4622-b335-a83703a0d221",
+                    "path": "<Keyboard>/numpad4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";numerico",
+                    "action": "move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "d80f9923-c7a6-4dec-a22f-c46dad2355db",
+                    "path": "<Keyboard>/numpad6",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";numerico",
+                    "action": "move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "0c319507-1e6a-47e1-a398-a4405c115b9c",
+                    "path": "<Keyboard>/numpad8",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";numerico",
+                    "action": "jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "numerico",
+            "bindingGroup": "numerico",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
